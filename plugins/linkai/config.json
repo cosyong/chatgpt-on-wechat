@@ -1,0 +1,17 @@
+{
+    "group_app_map": {
+        "测试群1": "default",
+            "赛捷ERP客服群": "PhdkYZv0",
+            "39AI ChatGPT测试群": "MEmWyxrP",
+            "ChatGPT测试群2": "GB7tm1x6",
+            "CooHaCB 店铺客服测试群": "KhWO8h47"
+    },
+    "midjourney": {
+        "enabled": true,
+        "auto_translate": true,
+        "img_proxy": true,
+        "max_tasks": 3,
+        "max_tasks_per_user": 1,
+        "use_image_create_prefix": true
+    }
+}
