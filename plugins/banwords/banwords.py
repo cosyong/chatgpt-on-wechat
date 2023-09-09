@@ -27,9 +27,11 @@ class Banwords(Plugin):
             # load config
             conf = super().load_config()
             curdir = os.path.dirname(__file__)
+            logger.warn(curdir)
             if not conf:
                 # 配置不存在则写入默认配置
                 config_path = os.path.join(curdir, "config.json")
+                logger.warn(config_path)
                 if not os.path.exists(config_path):
                     conf = {"action": "ignore"}
                     with open(config_path, "w") as f:
@@ -38,6 +40,7 @@ class Banwords(Plugin):
             self.searchr = WordsSearch()
             self.action = conf["action"]
             banwords_path = os.path.join(curdir, "banwords.txt")
+            logger.warn(banwords_path)
             with open(banwords_path, "r", encoding="utf-8") as f:
                 words = []
                 for line in f:
