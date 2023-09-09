@@ -20,7 +20,7 @@ from plugins import *
 @plugins.register(
     name="BDunit",
     desire_priority=0,
-    hidden=True,
+    hidden=False,
     desc="Baidu unit bot system",
     version="0.1",
     author="jackson",
