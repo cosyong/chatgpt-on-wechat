@@ -22,5 +22,6 @@ services:
       USE_LINKAI: 'False'
       LINKAI_API_KEY: ''
       LINKAI_APP_CODE: ''
+      BAN_WORDS_ENABLED: 'True'
    volumes:
   - ./config.json:/app/plugins/config.json
